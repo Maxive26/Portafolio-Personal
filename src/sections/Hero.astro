@@ -1,0 +1,44 @@
+---
+import Avatar from "../components/Avatar.astro";
+import "@fontsource-variable/sora";
+import Badge from "../components/Badge.astro";
+---
+
+<section class="mx-auto flex gap-24 justify-around items-end w-full max-w-4xl">
+  <Avatar />
+  <div class="mb-10">
+    <h1
+      class="text-4xl font-semibold mb-8 border-b-2 border-black flex gap-5 items-center"
+    >
+      MAXIMILIANO VERA <Badge
+        text="Disponible"
+        class="text-green-800 hover:text-green-800 ring-green-400 px-6 cursor-pointer animate-pulse"
+      />
+    </h1>
+    <h2>
+      <span class="font-semibold">Apasionado</span> en todo lo que hago,
+      <span class="font-semibold">dispuesto</span>
+      siempre a enfrentar desafíos. En mi educación autodidacta, he desarrollado
+      un sólido entendimiento de la <span class="font-semibold"
+        >arquitectura web</span
+      >, centrándome en la creación de experiencias de usuario dinámicas
+      mediante tecnologías como <span class="text-red-700 font-bold"
+        >HTML, CSS, JavaScript, React, Next.js, Tailwind</span
+      >.
+    </h2>
+    <div class="flex gap-2 mt-10">
+      <Badge href="https://github.com/Maxive26" text="Github" />
+      <Badge
+        href="https://www.linkedin.com/in/maximiliano-vera-a759b21b9/"
+        text="LinkedIn"
+      />
+      <Badge href="https://x.com/Maxive26" text="X" />
+      <Badge href="https://www.instagram.com/maxive26/" text="Instagram" />
+    </div>
+  </div>
+</section>
+<style>
+  h1 {
+    font-family: "Sora Variable";
+  }
+</style>
