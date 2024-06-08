@@ -2,20 +2,24 @@
 import Avatar from "../components/Avatar.astro";
 import "@fontsource-variable/sora";
 import Badge from "../components/Badge.astro";
+import Github from "../components/icons/Github.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
 ---
 
-<section class="mx-auto flex gap-24 justify-around items-end w-full max-w-4xl">
+<section
+  class="mx-auto flex gap-10 md:gap-24 flex-col md:flex-row justify-around items-center md:items-end w-full max-w-4xl"
+>
   <Avatar />
-  <div class="mb-10">
+  <div class="mb-10 md:p-0 p-10">
     <h1
       class="text-4xl font-semibold mb-8 border-b-2 border-black flex gap-5 items-center"
     >
       MAXIMILIANO VERA <Badge
         text="Disponible"
-        class="text-green-800 hover:text-green-800 ring-green-400 px-6 cursor-pointer animate-pulse"
+        class="text-green-500 hover:text-green-800 ring-green-400 px-6 cursor-pointer"
       />
     </h1>
-    <h2>
+    <h2 class="text-lg">
       <span class="font-semibold">Apasionado</span> en todo lo que hago,
       <span class="font-semibold">dispuesto</span>
       siempre a enfrentar desafíos. En mi educación autodidacta, he desarrollado
@@ -27,11 +31,15 @@ import Badge from "../components/Badge.astro";
       >.
     </h2>
     <div class="flex gap-2 mt-10">
-      <Badge href="https://github.com/Maxive26" text="Github" />
+      <Badge href="https://github.com/Maxive26" text="Github">
+        <Github slot="icon" />
+      </Badge>
       <Badge
         href="https://www.linkedin.com/in/maximiliano-vera-a759b21b9/"
         text="LinkedIn"
-      />
+      >
+        <LinkedIn slot="icon" />
+      </Badge>
       <Badge href="https://x.com/Maxive26" text="X" />
       <Badge href="https://www.instagram.com/maxive26/" text="Instagram" />
     </div>
